@@ -8,16 +8,16 @@
     <title>Odin Project Landing Page</title>
 </head>
 <style>
-    .elementMargin{
-    margin-top: 1vw;
-    margin-bottom: 5vw;
-    }
-    .aa{
+    .flexRow{
         width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .elementMargin{
+        margin-top: 1vw;
+        margin-bottom: 5vw;
     }
     .pageContentSize{
         width: 70%;
@@ -34,39 +34,67 @@
     }
 </style>
 <body>
-    <main class="aa ToMobile">
-        <header class=" pageContentSize contentArrange toMobile elementMargin">
-            <h3>
-                <a>Header Logo</a>
-            </h3>
-            <p style="display:flex; gap: 5vh;">
-                <a>header link one</a>
-                <a>header link two</a>
-                <a>header link three</a>
-            </p>
-        </header>
-        <section style="gap: 10vh; align-items: center;" class="contentArrange toMobile elementMargin">
+    <header class="flexRow" >
+         <section class="pageContentSize">
+            <header class="contentArrange toMobile elementMargin">
+                <h3>
+                    <a>Header Logo</a>
+                </h3>
+                <p style="display:flex; gap: 5vh;">
+                    <a>header link one</a>
+                    <a>header link two</a>
+                    <a>header link three</a>
+                </p>
+            </header>
+        </section>
+    </header> 
+    <section class="flexRow">
+        <section style="gap: 10vh; align-items: center" class="pageContentSize contentArrange toMobile elementMargin">
             <div>
-                <h1 style="font-size: 48px; font-weight: 900; line-height: 50px;">This website is awesome</h1>
-                <p style="font-size: 18px; margin: 10px 0px 20px 0px;">this website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</p>
+                <h1 style="font-size: 48px; font-weight: 900; line-height: 50px;"><a href="https://www.artstation.com/air-66">Alexey Egorov</a>, Yakutsk, Russian Federation.</h1>
+                <p style="font-size: 18px; margin: 10px 0px 20px 0px;">They know that all religions are but one story told in divers ways</p>
                 <button style="background-color: #3882f6;" class="flexCentered">
                     <h3 style="color: white;">Sign up</h3>
                 </button>
             </div>
             <div>
                 <img style="max-height: 260px; width: 600px;"
-                src="https://www.fakeavatar.com/wp-content/uploads/2022/06/Titles.jpg"
+                src="https://cdna.artstation.com/p/assets/images/images/028/835/160/large/alexey-egorov-military-art-in-position.jpg?1595654055"
                 alt="A imagem não carregou" srcset="">
             </div>
         </section>
-    </main>
-    <main class="pageContentSize pageContentSizeToMobile">
-        <section class="toMobile elementMargin">
-            <div style="background-color: white; width: 100vw; position:absolute;">
-                a
+    </section>
+    <section style="background-color: white; width: 100%; color: black;" class="flexRow">
+        <section class="pageContentSize flexCentered toMobile elementMargin flexRow">
+            <h1 style="font-size: 36px; font-weight: 900; line-height: 50px;" class="elementMargin">Some randon information.</h1>
+            <div style="gap: 10vh; text-align: center;" class="contentArrange">
+                <div>
+                    <img style="height: 180px; width: 180px; border-radius: 10px;"
+                    src="https://www.fakeavatar.com/wp-content/uploads/2022/07/AlexeyEgorov2.jpg"
+                    alt="A imagem não carregou" srcset="">
+                    <p style="width: 180px;">HEAVENLY BELLS <br>Death of the Poet</p>
+                </div>
+                <div>
+                    <img style="height: 180px; width: 180px; border-radius: 10px;"
+                    src="https://www.fakeavatar.com/wp-content/uploads/2022/07/AlexeyEgorov3.jpg"
+                    alt="A imagem não carregou" srcset="">
+                    <p style="width: 180px;">Nightmares creators<br>16 de março de 2016</p>
+                </div>
+                <div>
+                    <img style="height: 180px; width: 180px; border-radius: 10px;"
+                    src="https://www.fakeavatar.com/wp-content/uploads/2022/07/AlexeyEgorov4.jpg"
+                    alt="A imagem não carregou" srcset="">
+                    <p style="width: 180px;">Shooting stars<br>653 3,0mil 38</p>
+                </div>
+                <div>
+                    <img style="height: 180px; width: 180px; border-radius: 10px;"
+                    src="https://www.fakeavatar.com/wp-content/uploads/2022/07/AlexeyEgorov5.jpg"
+                    alt="A imagem não carregou" srcset="">
+                    <p style="width: 180px;">Territory War<br>Alexey Egorov</p>
+                </div>
             </div>
+            
         </section>
-        
-    </main>
+    </section>
 </body>
 </html>

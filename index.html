@@ -8,11 +8,24 @@
     <title>Odin Project Landing Page</title>
 </head>
 <style>
-    .mb{
+    .elementMargin{
+    margin-top: 1vw;
     margin-bottom: 5vw;
+    }
+    .aa{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .pageContentSize{
         width: 70%;
+    }
+    .contentArrange{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     .flexCentered{
         display: flex;
@@ -21,8 +34,8 @@
     }
 </style>
 <body>
-    <main class="pageContentSize pageContentSizeToMobile">
-        <header class="headerDisplay toMobile mb">
+    <main class="aa ToMobile">
+        <header class=" pageContentSize contentArrange toMobile elementMargin">
             <h3>
                 <a>Header Logo</a>
             </h3>
@@ -32,13 +45,28 @@
                 <a>header link three</a>
             </p>
         </header>
-        <main class="toMobile mb">
-            <h1>This website is awesome</h1>
-            <p>this website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</p>
-            <button style="background-color: #3882f6;" class="flexCentered">
-                <h3 style="color: white;">Sign in</h3>
-            </button>
-        </main>
+        <section style="gap: 10vh; align-items: center;" class="contentArrange toMobile elementMargin">
+            <div>
+                <h1 style="font-size: 48px; font-weight: 900; line-height: 50px;">This website is awesome</h1>
+                <p style="font-size: 18px; margin: 10px 0px 20px 0px;">this website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</p>
+                <button style="background-color: #3882f6;" class="flexCentered">
+                    <h3 style="color: white;">Sign up</h3>
+                </button>
+            </div>
+            <div>
+                <img style="max-height: 260px; width: 600px;"
+                src="https://www.fakeavatar.com/wp-content/uploads/2022/06/Titles.jpg"
+                alt="A imagem não carregou" srcset="">
+            </div>
+        </section>
+    </main>
+    <main class="pageContentSize pageContentSizeToMobile">
+        <section class="toMobile elementMargin">
+            <div style="background-color: white; width: 100vw; position:absolute;">
+                a
+            </div>
+        </section>
+        
     </main>
 </body>
 </html>
